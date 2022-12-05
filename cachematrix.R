@@ -22,8 +22,8 @@ cacheinverse <- function(x, ...) {
     message("getting cached data")
     return(inve)
   }
-  inverted_matrix <- x$get()
-  inve <- solve(inverted_matrix , ...)
+  matrix_to_be_inverted <- x$get()
+  inve <- solve(matrix_to_be_inverted , ...)
   x$setinverse(inve)
   inve
 }
