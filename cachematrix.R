@@ -26,14 +26,5 @@ cacheinverse <- function(x, ...) {
   x$setinverse(inve)
   inve
 }
-new_matrix <- makeCacheMatrix(matrix(4:7,2,2))
-new_matrix$get()
-new_matrix$getinverse()
-cacheinverse(new_matrix)
-new_matrix$set(matrix(c(5, 6, 8, 6,7,3,4,2,4),3,3,3))
-new_matrix$get()
-new_matrix$getinverse()
-cacheinverse(new_matrix)
-new_matrix$getinverse()
 
 
