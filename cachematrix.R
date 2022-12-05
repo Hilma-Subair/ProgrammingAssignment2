@@ -2,7 +2,6 @@
 ## functions do
 
 ## Write a short comment describing this function
-
 makeCacheMatrix <- function(x = matrix()) {
   inve <- NULL
   set <- function(y) {
@@ -36,4 +35,5 @@ new_matrix$get()
 new_matrix$getinverse()
 cacheinverse(new_matrix)
 new_matrix$getinverse()
+
 
